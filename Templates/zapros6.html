@@ -1,0 +1,20 @@
+<html>
+   <head>
+      <title>Working with db</title>
+   </head>
+   <body bgcolor=lightcyan text=navy>
+      <h2>Resuts from db</h2>
+      <br><br>
+      <table border =1 width = 80% style="margin-left: 100px;">
+      <tr>
+         <td align = center> avg weight </td>
+         <td align = center> month </td>
+      </tr>
+      {%for blank in blanks%}
+      <tr>
+         <td align=center>{{blank['avg weight']}}</td>
+         <td align=center>{{blank['month']}}</td>
+      </tr>
+      {% endfor %}
+   </body>
+</html>

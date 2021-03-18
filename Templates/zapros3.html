@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>Working with db</title>
+   </head>
+   <body bgcolor=lightcyan text=navy>
+      <h2>Resuts from db</h2>
+      <br><br>
+      <table border =1 width = 80% style="margin-left: 100px;">
+      <tr>
+         <td align = center> id_dog </td>
+         <td align = center> company </td>
+         <td align = center> tel_num </td>
+         <td align = center> state </td>
+         <td align = center> address </td>
+         <td align = center> surname </td>
+         <td align = center> weight </td>
+      </tr>
+      {%for blank in blanks%}
+      <tr>
+         <td align=center>{{blank['id_dog']}}</td>
+         <td align=center>{{blank['company']}}</td>
+         <td align=center>{{blank['tel_num']}}</td>
+         <td align=center>{{blank['state']}}</td>
+         <td align=center>{{blank['address']}}</td>
+         <td align=center>{{blank['surname']}}</td>
+         <td align=center>{{blank['weight']}}</td>
+      </tr>
+      {% endfor %}
+   </body>
+</html>
